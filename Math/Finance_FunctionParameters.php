@@ -13,7 +13,7 @@ class Math_Finance_FunctionParameters
     * @param array      Parameters (variables values of the function) to be preserved
     * @access private
     */
-    function Math_Finance_FunctionParameters($called_from_get_instance = False, $parameters = array())
+    private function Math_Finance_FunctionParameters($called_from_get_instance = False, $parameters = array())
     {
 		// PHP4 hack
 		if (!$called_from_get_instance)
