@@ -23,7 +23,6 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*",
         "pear/math_numerical_rootfinding": "*"
     },
     "require-dev": {
