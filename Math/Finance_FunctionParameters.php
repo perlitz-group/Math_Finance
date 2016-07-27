@@ -32,7 +32,7 @@ class Math_Finance_FunctionParameters
     * @static
     * @access public
     */
-	function &getInstance($parameters = array(), $reset = False)
+	public static function getInstance($parameters = array(), $reset = False)
 	{
 		static $singleton;
 

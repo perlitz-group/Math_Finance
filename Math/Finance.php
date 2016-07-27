@@ -57,6 +57,12 @@ define('FINANCE_COUNT_EUROPEAN', 4);
  */
 class Math_Finance
 {
+    public function testFunction($param = 'test param')
+    {
+        return $param;
+    }
+    
+    
     /*******************************************************************
     ** Interest Rates Conversion Functions                         *****
     *******************************************************************/
@@ -279,7 +285,7 @@ class Math_Finance
             'fv'    => $fv,
             'type'  => $type,
         );
-		$parameters_class =& Math_Finance_FunctionParameters::getInstance($parameters, True);
+		$parameters_class = Math_Finance_FunctionParameters::getInstance($parameters, True);
 
         $newtonRaphson = new Math_Numerical_RootFinding_Newtonraphson(array('err_tolerance' => FINANCE_PRECISION));
         return $newtonRaphson->compute(array('Math_Finance', '_tvm'), array('Math_Finance', '_dtvm'), $guess);
@@ -299,7 +305,7 @@ class Math_Finance
     {
         require_once 'Math/Finance_FunctionParameters.php';
 
-		$parameters_class =& Math_Finance_FunctionParameters::getInstance();
+		$parameters_class = Math_Finance_FunctionParameters::getInstance();
         $nper   = $parameters_class->parameters['nper'];
         $pmt    = $parameters_class->parameters['pmt'];
         $pv     = $parameters_class->parameters['pv'];
@@ -322,7 +328,7 @@ class Math_Finance
     {
         require_once 'Math/Finance_FunctionParameters.php';
 
-		$parameters_class =& Math_Finance_FunctionParameters::getInstance();
+		$parameters_class = Math_Finance_FunctionParameters::getInstance();
         $nper   = $parameters_class->parameters['nper'];
         $pmt    = $parameters_class->parameters['pmt'];
         $pv     = $parameters_class->parameters['pv'];
