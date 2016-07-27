@@ -22,9 +22,6 @@
         "source": "https://github.com/pear/Math_Finance"
     },
     "type": "library",
-    "require": {
-        "pear/math_numerical_rootfinding": "*"
-    },
     "require-dev": {
         "phpunit/phpunit": "*"
     }
