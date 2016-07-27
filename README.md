@@ -19,7 +19,8 @@ composer require hashmode/math_finance
 After installation add the below code into your composer.json and run `composer dump-autoload`
 ```
 "classmap": [
-    "your-vendor-folder/hashmode/math_finance/Math"
+    "your-vendor-folder/hashmode/math_finance/Math",
+    "your-vendor-folder/hashmode/math_numerical_rootfinding/Math/Numerical"
 ]        
 ```
 
