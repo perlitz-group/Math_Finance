@@ -54,15 +54,7 @@ define('FINANCE_COUNT_EUROPEAN', 4);
  */
 class Math_Finance
 {
-    public function testFunction($param = 'test param')
-    {
-        $excel = new PHPExcel();
-        
-        
-        return $param;
-    }
-    
-    
+
     /*******************************************************************
     ** Interest Rates Conversion Functions                         *****
     *******************************************************************/
