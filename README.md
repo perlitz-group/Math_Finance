@@ -23,3 +23,6 @@ After installation add the below code into your composer.json and run `composer 
 ]        
 ```
 
+This package is dependent on `Math_Numerical_RootFinding` (requirement is added into composer)
+https://github.com/hashmode/Math_Numerical_RootFinding
+
