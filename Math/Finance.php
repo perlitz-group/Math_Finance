@@ -452,6 +452,8 @@ class Math_Finance
     */
     public static function internalRateOfReturn($values, $options = array())
     {
+        require_once 'Math/Finance_FunctionParameters.php';
+
         if (!is_array($values)) {
             throw new \Exception('The cash flow series most be an array');
         }
