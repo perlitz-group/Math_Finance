@@ -16,7 +16,7 @@
         "./"
     ],
     "license": "PHP License",
-    "name": "hashmode/math_finance",
+    "name": "perlitz-group/math_finance",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Math_Finance",
         "source": "https://github.com/pear/Math_Finance"
@@ -24,7 +24,7 @@
     "type": "library",
     "require": {
         "php": "~5.3|^7.0",
-        "hashmode/math_numerical_rootfinding": "~1.0.0"
+        "perlitz-group/math_numerical_rootfinding": "~1.1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "*"

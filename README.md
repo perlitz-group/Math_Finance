@@ -11,19 +11,21 @@ https://github.com/pear/Math_Finance
 * all classes are called from global namespace
 * Other small improvements
 
+* PHP 7 compatibility
+
 You should use composer to install it
 ```
-composer require hashmode/math_finance
+composer require perlitz-group/math_finance
 ```
 
 After installation add the below code into your composer.json and run `composer dump-autoload`
 ```
 "classmap": [
-    "your-vendor-folder/hashmode/math_finance/Math",
-    "your-vendor-folder/hashmode/math_numerical_rootfinding/Math/Numerical"
+    "your-vendor-folder/perlitz-group/math_finance/Math",
+    "your-vendor-folder/perlitz-group/math_numerical_rootfinding/Math/Numerical"
 ]        
 ```
 
 This package is dependent on `Math_Numerical_RootFinding` (requirement is added into composer)
-https://github.com/hashmode/Math_Numerical_RootFinding
+https://github.com/perlitz-group/Math_Numerical_RootFinding
 
