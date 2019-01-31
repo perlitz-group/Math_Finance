@@ -15,7 +15,7 @@
     "include-path": [
         "./"
     ],
-    "license": "PHP License",
+    "license": "PHP-3.01",
     "name": "perlitz-group/math_finance",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Math_Finance",
