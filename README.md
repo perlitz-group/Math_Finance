@@ -12,6 +12,7 @@ https://github.com/pear/Math_Finance
 * Other small improvements
 
 * PHP 7 compatibility
+* Compliance with PSR-0
 
 You should use composer to install it
 ```

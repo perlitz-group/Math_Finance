@@ -261,9 +261,9 @@ class Math_Finance
     public static function rate($nper, $pmt, $pv, $fv = 0, $type = 0, $guess = 0.1)
     {
         // To solve the equation
-        require_once 'Math/Numerical/RootFinding/NewtonRaphson.php';
+        // 'Math/Numerical/RootFinding/NewtonRaphson.php';
         // To preserve some variables in the Newton-Raphson callback functions
-        require_once 'Math/Finance_FunctionParameters.php';
+        // 'Math/Finance/FunctionParameters.php';
 
         if ($type != FINANCE_PAY_END && $type != FINANCE_PAY_BEGIN) {
             throw new \Exception('Payment type must be FINANCE_PAY_END or FINANCE_PAY_BEGIN');
@@ -295,8 +295,6 @@ class Math_Finance
     */
     public static function _tvm($rate)
     {
-        require_once 'Math/Finance_FunctionParameters.php';
-
 		$parameters_class = \Math_Finance_FunctionParameters::getInstance();
         $nper   = $parameters_class->parameters['nper'];
         $pmt    = $parameters_class->parameters['pmt'];
@@ -318,8 +316,6 @@ class Math_Finance
     */
     public static function _dtvm($rate)
     {
-        require_once 'Math/Finance_FunctionParameters.php';
-
 		$parameters_class = \Math_Finance_FunctionParameters::getInstance();
         $nper   = $parameters_class->parameters['nper'];
         $pmt    = $parameters_class->parameters['pmt'];
@@ -452,8 +448,6 @@ class Math_Finance
     */
     public static function internalRateOfReturn($values, $options = array())
     {
-        require_once 'Math/Finance_FunctionParameters.php';
-
         if (!is_array($values)) {
             throw new \Exception('The cash flow series most be an array');
         }
@@ -494,8 +488,6 @@ class Math_Finance
     */
     public static function _npv($rate, $values = array())
     {
-        require_once 'Math/Finance_FunctionParameters.php';
-
         if (!$values) {
             // called from IRR
 		    $parameters_class = \Math_Finance_FunctionParameters::getInstance();
@@ -524,8 +516,6 @@ class Math_Finance
     */
     public static function _dnpv($rate, $values = array())
     {
-        require_once 'Math/Finance_FunctionParameters.php';
-
         if (!$values) {
             // called from IRR
 		    $parameters_class = \Math_Finance_FunctionParameters::getInstance();

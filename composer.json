@@ -8,13 +8,10 @@
     ],
     "autoload": {
         "psr-0": {
-            "Math": "./"
+            "Math_Finance": "src/"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Math_Finance",
-    "include-path": [
-        "./"
-    ],
     "license": "PHP-3.01",
     "name": "perlitz-group/math_finance",
     "support": {
